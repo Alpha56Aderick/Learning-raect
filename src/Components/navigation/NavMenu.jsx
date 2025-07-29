@@ -6,10 +6,7 @@ const NavMenu = () => {
   return (
     <>
       {pages.map((page) => (
-        <button
-          key={page}
-          className="text-white hover:text-gray-200 transition-colors duration-200 font-medium"
-        >
+        <button key={page} className="nav-button">
           {page}
         </button>
       ))}

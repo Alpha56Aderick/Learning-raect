@@ -5,13 +5,10 @@ const MobileMenu = () => {
   const pages = ["All", "MyQoutes", "Favorite"];
 
   return (
-    <div className="relative">
-      <button
-        className="text-white focus:outline-none"
-        onClick={() => setOpen(!open)}
-      >
+    <div className="mobilemenu-container">
+      <button className="mobilemenu-button" onClick={() => setOpen(!open)}>
         <svg
-          className="w-6 h-6"
+          className="mobilemenu-svg"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -26,11 +23,11 @@ const MobileMenu = () => {
       </button>
 
       {open && (
-        <div className="absolute top-10 left-0 bg-white text-black w-40 rounded shadow-md z-10">
+        <div className="mobilemenu-dropdown">
           {pages.map((page) => (
             <div
               key={page}
-              className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              className="mobilemenu-item"
               onClick={() => setOpen(false)}
             >
               {page}
