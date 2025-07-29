@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
-import MobileMenu from "./MobileMenu";
 import UserMenu from "./UserMenu";
 import "./navigation.css";
 
