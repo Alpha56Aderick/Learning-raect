@@ -7,7 +7,7 @@ const UserMenu = () => {
   return (
     <div className="usermenu-container">
       <button onClick={() => setOpen(!open)} className="usermenu-button">
-        <img className="usermenu-avatar" src="./public/vite.svg" alt="avatar" />
+        <img className="usermenu-avatar" src="/vite.svg" alt="avatar" />
       </button>
 
       {open && (
